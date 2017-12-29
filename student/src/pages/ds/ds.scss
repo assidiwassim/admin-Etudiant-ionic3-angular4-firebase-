@@ -1,0 +1,20 @@
+page-ds {
+    ion-spinner * {
+        width: 30px;
+        height: 100px;
+        stroke: #444;
+       
+        fill: #222;
+      }
+      
+.position_spinner{
+    position: absolute;
+    top:200px ;
+    
+    z-index: -1;
+    margin: 0 auto 0 auto ;
+    margin-left: 150px ;
+    
+
+}
+}

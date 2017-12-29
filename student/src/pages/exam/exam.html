@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>Emploit des examens</ion-title>
+    
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content >
+
+      <ion-spinner name="bubbles" class="position_spinner"></ion-spinner>
+    <div  *ngFor="let item of  InformationList.reverse()" >
+<div  *ngIf="Section==item.Section && Filiere==item.Filiere">
+    <ion-card >
+      
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="https://upload.wikimedia.org/wikipedia/fr/thumb/7/79/LogoFacult%C3%A9DesSciencesDeMonastir2012.png/1200px-LogoFacult%C3%A9DesSciencesDeMonastir2012.png">
+          </ion-avatar>
+          <h2>FSM </h2>
+          <p>{{item.Date}}</p>
+        </ion-item>
+        
+        <img src="{{item.File}}"/>
+      
+      
+      </ion-card>
+      </div>
+    </div>
+  </ion-content>
+  

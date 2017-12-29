@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title>welcome </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content >
+      <ion-list>
+
+          <ion-item>
+            <ion-label>Section</ion-label>
+            <ion-select  [(ngModel)]="Sections" (ionChange)="onChangeSection(Sections)" #Section>
+              
+              <ion-option value="Informatique">Informatique</ion-option>
+              <ion-option value="Physique">Physique</ion-option>
+              
+              <ion-option value="Math">Math</ion-option>
+              <ion-option value="Chimie">Chimie</ion-option>
+              <ion-option value="Electronique">Electronique</ion-option>
+            </ion-select>
+           </ion-item>
+
+
+          <ion-item>
+            <ion-label>Filiere</ion-label>
+                <ion-select  [(ngModel)]="Filieres" (ionChange)="onChangeFiliere(Filieres)" #Filiere>
+              <ion-option value="1">1ere</ion-option>
+              <ion-option value="2">2eme</ion-option>
+              <ion-option value="3">3eme</ion-option>
+            </ion-select>
+          </ion-item>
+
+          <ion-item>
+          <button ion-button (tap)="continue()">Continue</button>
+        </ion-item>
+        </ion-list>
+        
+        
+  </ion-content>
+  
